@@ -11,6 +11,8 @@ public class CorrectEnterPage extends BasePage{
     @FindBy(css = "a[href*='/delete_account']")
     WebElement deleteAccount;
 
+     @FindBy (xpath = "//a[normalize-space()='Logout']")
+     WebElement logout;
 
 
 
@@ -20,6 +22,10 @@ public String logedAsUserNameGetText(){
 
 public void clickdeleteAccount(){
     deleteAccount.click();
+}
+
+public void clicklogout(){
+    logout.click();
 }
 
 }

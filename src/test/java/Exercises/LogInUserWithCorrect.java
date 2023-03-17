@@ -47,7 +47,8 @@ public class LogInUserWithCorrect extends BaseTest{
 }
 
 
-    @AfterSuite
+
+     @AfterSuite
     public void afterTest() {
         // Perform cleanup tasks or generate test reports here
         Driver.getDriver().quit();
